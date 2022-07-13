@@ -1,7 +1,7 @@
-Created with the following tech stack:
+Created with the following software:
 
 -- HTML5  
--- Tailwind CSS3  
+-- CSS3  
 -- JS ES6  
 -- WebpackJS  
   
