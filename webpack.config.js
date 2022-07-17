@@ -5,6 +5,9 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   devtool: 'inline-source-map',
+  devServer: {
+    static: './dist/index.html',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'To Do List',
@@ -18,11 +21,21 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }]
+            ]
+          }
+        }
+      },
+      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
-
     ],
-
   },
 };

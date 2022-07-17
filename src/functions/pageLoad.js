@@ -1,9 +1,9 @@
 import content from "../assets/content";
-import header from "../assets/loadHeader";
+import sidebar from "../assets/sidebar";
 
 const pageLoad = function() {
+    document.body.appendChild(sidebar());
     document.body.appendChild(content());
-    document.querySelector(".content").appendChild(header());
 }
 
 export default pageLoad();

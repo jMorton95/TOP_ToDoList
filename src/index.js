@@ -1,4 +1,4 @@
 import pageLoad from "./functions/pageLoad";
-import "./styles/style.css";
+import "./styles/body.css";
 
 pageLoad;
