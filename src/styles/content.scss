@@ -2,16 +2,23 @@
 
 .sidebar{
     display: grid;
-    grid-template-rows: 1fr 200px;
-    width: 250px;
+    grid-template-rows: 50px 1fr 50px;
+    justify-items: center;
+    width: 150px;
     height: 100%;
+    @include sidebarLight;
 
+        h3{
+            padding-left: 16px;
+            justify-self: left;
+        }
         .sideBarList{
-            width: 100%;
+
         }
 
         .addProject{
             @include buttonBase;
+            margin-bottom: 8px;
         }
 }
 

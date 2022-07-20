@@ -12,7 +12,11 @@ const header = function() {
     pageName.classList.add("title");
     pageName.textContent = "To Do List";
 
-    container.append(titleImg, pageName);
+    const theme = document.createElement('button');
+    theme.classList.add("theme");
+    theme.textContent = "Switch Theme";
+
+    container.append(titleImg, pageName, theme);
     return container;
 }
 

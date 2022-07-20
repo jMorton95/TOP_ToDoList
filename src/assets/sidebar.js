@@ -8,16 +8,19 @@ const sidebar = function(){
     const container = document.createElement('div');
     container.classList.add("sidebar");
 
+    const project = document.createElement('h3');
+    project.textContent = "Projects";
+
     const projectList = document.createElement('div');
     projectList.classList.add("sideBarList");
     projectList.textContent = "Projects";
-    container.appendChild(projectList);
+    
     
     const addProject = document.createElement('div');
     addProject.classList.add("addProject");
     addProject.textContent = "+";
-    container.appendChild(addProject);
 
+    container.append(project, projectList, addProject);
     projectList.append(...projects());
 
     return container;

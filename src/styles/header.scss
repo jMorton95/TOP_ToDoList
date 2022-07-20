@@ -1,7 +1,8 @@
 @import "./mixins.scss";
 
 .header{
-    @include headFootThemeLight;
+    @include themeLight;
+    @include headFootBase;
 
     img{
         @include imageBase;
@@ -9,5 +10,14 @@
 
     .pageName{
 
+    }
+
+    .theme{
+        @include buttonBase;
+        background: none;
+        width: 64px;
+        height: 90%;
+        margin-left: auto;
+        margin-right: 25px;
     }
 }

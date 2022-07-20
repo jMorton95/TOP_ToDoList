@@ -1,8 +1,8 @@
 @import "./mixins.scss";
 
 footer{
-
-    @include headFootThemeLight;
+    @include themeLight;
+    @include headFootBase;
     justify-content: center;
 
     p{
