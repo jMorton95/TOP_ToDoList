@@ -1,4 +1,4 @@
-import todos from "./todos";
+import projects from "./projects";
 
 const sidebar = function(){
     const container = document.createElement('div');
@@ -13,11 +13,9 @@ const sidebar = function(){
     projectList.classList.add("sideBarList");
     projectList.textContent = "Projects";
     container.appendChild(projectList);
-
-    /*Figure out how to Append this. */
-    for (let x = 0; x < todos.length; x++){
-        projectList.append(todos()[x]);
-    }
+    
+    projectList.append(...projects());
+    
     
 
     return container;
