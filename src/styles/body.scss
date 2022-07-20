@@ -3,6 +3,8 @@
     src: url('../assets/fonts/FantasqueSansMono-Regular.woff2') format('woff2'),
       url('../assets/fonts/FantasqueSansMono-Regular.woff') format('woff');
 }
+
+/*Apply our whole page styling, CSS reset, Font, forced size and position our main components in a grid*/;
 body {
     font-family: 'FantasqueSansMono';
     margin: 0px;
@@ -14,12 +16,10 @@ body {
     width: 100vw;
     display: grid;
     grid-template-rows: 64px 1fr 40px;
+    user-select: none;
 }
 
-/*Center Container*/
 .content{
 
 }
-.projectContainer{
-    display: grid;
-}
+

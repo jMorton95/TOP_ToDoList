@@ -2,6 +2,7 @@ import dataHandling from '../functions/data.js';
 import Icon from "./images/sidebarIcon.svg";
 
 const projects = function(){
+    /*Return a nodelist that displays a summary of all our currently stored projects. */
     const allTodos = (function() {
         const nodes = [];
 

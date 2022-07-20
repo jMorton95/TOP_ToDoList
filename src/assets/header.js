@@ -2,6 +2,7 @@ import Icon from "./images/title.svg";
 import Bulb from "./images/bulb.svg";
 
 const header = function() {
+    /*Return a header component with our title image, page name and our colour theme switcher button. */
     const container = document.createElement("div");
     container.classList.add("header");
 
