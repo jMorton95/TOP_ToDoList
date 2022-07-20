@@ -1,4 +1,5 @@
 import Icon from "./images/title.svg";
+import Bulb from "./images/bulb.svg";
 
 const header = function() {
     const container = document.createElement("div");
@@ -13,8 +14,9 @@ const header = function() {
     pageName.textContent = "To Do List";
 
     const theme = document.createElement('button');
-    theme.classList.add("theme");
-    theme.textContent = "Switch Theme";
+    const bulb = document.createElement('img');
+    bulb.src = Bulb;
+    theme.appendChild(bulb);
 
     container.append(titleImg, pageName, theme);
     return container;

@@ -13,8 +13,6 @@ const sidebar = function(){
 
     const projectList = document.createElement('div');
     projectList.classList.add("sideBarList");
-    projectList.textContent = "Projects";
-    
     
     const addProject = document.createElement('div');
     addProject.classList.add("addProject");

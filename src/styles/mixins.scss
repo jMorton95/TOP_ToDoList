@@ -8,12 +8,15 @@
     transition: all 100ms ease-in;
     cursor: pointer;
     border: none;
-    width: 80%;
+    background: none;
     border-radius: 6px;
 
     &:hover{
         background:#71717a45;
-        border: 1px solid hsla(0, 0%, 0%, 0.496);
+    }
+
+    &:active{
+        scale: 0.9;
     }
 }
 @mixin projectBase{

@@ -1,12 +1,22 @@
 import dataHandling from '../functions/data.js';
+import Icon from "./images/sidebarIcon.svg";
 
 const projects = function(){
     const allTodos = (function() {
-        let nodes = [];
+        const nodes = [];
+
         for (let x = 0; x < dataHandling().length; x++){
-            let el = document.createElement('div');
+            const el = document.createElement('button');
             el.classList.add('projectItem');
-            el.textContent = `Project ${x}`;
+
+            const icon = document.createElement('img');
+            icon.src = Icon;
+
+            const project = document.createElement('h3');
+            project.textContent = dataHandling()[x];
+
+            el.append(icon, project);
+
             nodes.push(el);
          }
         return nodes;

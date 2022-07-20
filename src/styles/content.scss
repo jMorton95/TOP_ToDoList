@@ -2,23 +2,44 @@
 
 .sidebar{
     display: grid;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 75px 1fr 100px;
     justify-items: center;
     width: 150px;
     height: 100%;
     @include sidebarLight;
 
         h3{
+            font-size: 1.5rem;
             padding-left: 16px;
             justify-self: left;
         }
-        .sideBarList{
 
+        .sideBarList{
+            display: grid;
+            gap: 10px;
+            align-content: start;
+
+            button{
+                @include buttonBase;
+                height: 50px;
+                width: 135px;
+                justify-content: left;
+
+                img{
+                    @include imageBase;
+                }
+
+                h3{
+                    font-size: 0.8rem;
+                }
+            }
         }
 
         .addProject{
             @include buttonBase;
+            width: 80%;
             margin-bottom: 8px;
+            font-size: 3rem;
         }
 }
 

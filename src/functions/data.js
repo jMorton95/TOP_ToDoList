@@ -1,5 +1,5 @@
 const todoItem = function() {
-    return [1, 2, 3, 4];
+    return ['Gym', 'Software', 'Study', 'Socials'];
 }
 
 export default todoItem;
