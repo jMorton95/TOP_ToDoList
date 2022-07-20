@@ -1,0 +1,13 @@
+@import "./mixins.scss";
+
+.header{
+    @include headFootThemeLight;
+
+    img{
+        @include imageBase;
+    }
+
+    .pageName{
+
+    }
+}

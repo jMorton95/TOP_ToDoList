@@ -1,0 +1,23 @@
+@mixin buttonBase {
+    
+}
+@mixin projectBase{
+
+}
+
+@mixin imageBase {
+    height: 32px;
+    width: 32px;
+}
+
+@mixin headFootBase{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+}
+@mixin headFootThemeLight {
+    @include headFootBase;
+    background-color: #71717A;
+    color: black;
+}

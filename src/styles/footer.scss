@@ -1,0 +1,14 @@
+@import "./mixins.scss";
+
+footer{
+
+    @include headFootThemeLight;
+    justify-content: center;
+
+    p{
+
+    }
+    img{
+        @include imageBase;
+    }
+}

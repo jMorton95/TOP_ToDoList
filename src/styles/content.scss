@@ -1,0 +1,20 @@
+@import "./mixins.scss";
+
+.sidebar{
+    display: grid;
+    grid-template-rows: 1fr 200px;
+    width: 250px;
+    height: 100%;
+
+        .sideBarList{
+            width: 100%;
+        }
+
+        .addProject{
+            @include buttonBase;
+        }
+}
+
+.projectContainer{
+    
+}
