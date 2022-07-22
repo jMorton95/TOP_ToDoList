@@ -1,4 +1,4 @@
-import sidebar from "./sidebar";
+import { sidebar } from "./sidebar";
 
 const content = function() {
  /*Create a central content container, import our Sidebar and Project Container,
